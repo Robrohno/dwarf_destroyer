@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CraftingManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private Item currentItem;
+    public Image customCursor;
+
+    private void OnMouseDown()
     {
         
-    }
+
+        if (currentItem == null)
+        {
+           // currentItem = item;
+            customCursor.gameObject.SetActive(true);
+            customCursor.sprite = currentItem.GetComponent<Image>().sprite;
+        }
+   }
 }

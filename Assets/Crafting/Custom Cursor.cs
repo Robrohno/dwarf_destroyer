@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CustomCursor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static GameObject SelectedObject;
+    private void Update()
     {
+        if (SelectedObject != null)
+        {
+            SelectedObject.transform.position = Input.mousePosition;
+        }
         
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    }
+   
     }
 }

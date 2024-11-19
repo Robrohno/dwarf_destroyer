@@ -1,18 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Slot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   public Item item;
+    public int Index;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
