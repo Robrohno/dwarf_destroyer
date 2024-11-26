@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d967dc4a0df0eef44b40317974c35784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Wood
 --- !u!114 &210789551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d967dc4a0df0eef44b40317974c35784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Iron
 --- !u!114 &1907121304
 MonoBehaviour:
   m_ObjectHideFlags: 0

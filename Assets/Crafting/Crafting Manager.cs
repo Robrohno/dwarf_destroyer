@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CraftingManager : MonoBehaviour
 {
 
-    private Item SelectedObject;
+    private Item currentitem;
     public Image customCursor;
 
     public Slot[] craftingSlots;
@@ -17,7 +17,7 @@ public class CraftingManager : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             
-            if (SelectedObject != null)
+            if (currentitem != null)
             {
                 Debug.Log(" hey");
                 customCursor.gameObject.SetActive(false);
@@ -35,9 +35,9 @@ public class CraftingManager : MonoBehaviour
 
                 }
                 nearestSlot.gameObject.SetActive(true);
-                nearestSlot.GetComponent<Image>().sprite = SelectedObject.GetComponent<Image>().sprite;
-                nearestSlot.item = SelectedObject;
-                SelectedObject = null;
+                nearestSlot.GetComponent<Image>().sprite = currentitem.GetComponent<Image>().sprite;
+                nearestSlot.item = currentitem;
+                currentitem = null;
             }
 
         }
@@ -45,17 +45,17 @@ public class CraftingManager : MonoBehaviour
     }
 
 
-    private void OnMouseDown(){
+    public void OnMouseDown(){
        
 
 
 
 
-        if (SelectedObject == null)
+        if (currentitem == null)
         {
-           // currentItem = item;
+           //currentItem = item;
             customCursor.gameObject.SetActive(true);
-            customCursor.sprite = SelectedObject.GetComponent<Image>().sprite;
+            customCursor.sprite = currentitem.GetComponent<Image>().sprite;
         }
    }
 }
