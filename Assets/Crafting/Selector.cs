@@ -9,7 +9,7 @@ public class Selector : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
    
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log(this.gameObject.name + " Was Clicked.");
+        
 
         CustomCursor.SelectedObject = gameObject;
 
