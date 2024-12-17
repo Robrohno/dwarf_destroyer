@@ -6,9 +6,15 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+<<<<<<< Updated upstream:Assets/player house.cs
 
 
     float Speed = 5;
+=======
+    static int nextScene = 0;
+    int score;
+    public float Speed = 5;
+>>>>>>> Stashed changes:Assets/player.cs
     Rigidbody2D rb;
     Vector3 startPosition;
 
