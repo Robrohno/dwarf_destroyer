@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Blueprintmousethingy : MonoBehaviour
 {
-
+    
     public Rigidbody2D rb2;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,27 @@ public class Blueprintmousethingy : MonoBehaviour
    
     private void Update()
     {
+
+        
+        
+
+
+
+
+            if (Input.GetKeyDown("space"))
+            {
+                SceneManager.LoadScene("inside house possible temp");
+            }
+
+        
+
+
+
+
+
+
+
+
 
         if ( Input.GetMouseButton(0)) {
             

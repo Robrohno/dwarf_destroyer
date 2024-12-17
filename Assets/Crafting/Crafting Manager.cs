@@ -11,6 +11,10 @@ public class CraftingManager : MonoBehaviour
 
     public Slot[] craftingSlots;
 
+    
+
+    
+
 
     private void Update()
     {
