@@ -11,13 +11,12 @@ public class playermovement : MonoBehaviour
     public Animator anim;
 
 
-   
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
 
         if(horizontal > 0 && transform.localScale.x < 0 ||
              horizontal < 0 && transform.localScale.x > 0)
@@ -26,7 +25,25 @@ public class playermovement : MonoBehaviour
         }
 
         anim.SetFloat("horizontal", Mathf.Abs (horizontal));
-        anim.SetFloat("vertical", Mathf.Abs (vertical));
+        anim.SetFloat("vertical", vertical);
+        if(vertical < 0)
+        {
+            anim.SetBool("walkingDown", true);
+        }
+        else
+        {
+            anim.SetBool("walkingDown", false);
+        }
+
+        if(horizontal != 0)
+        {
+            anim.SetBool("hoizontalWalking", true);
+        }
+        else
+        {
+            anim.SetBool("hoizontalWalking", false);
+        }
+
 
         rb.velocity = new Vector2(horizontal, vertical) * speed;
     }
