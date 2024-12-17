@@ -6,17 +6,17 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
-    static int nextScene = 0;
-    int score;
+
+
     float Speed = 5;
     Rigidbody2D rb;
     Vector3 startPosition;
-    public TMP_Text ScoreText;
+
     void Start()
     {
         startPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();
-        ScoreText.text = "Score: " + score;
+
     }
 
     // Update is called once per frame
@@ -31,27 +31,16 @@ public class Player : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Enemy"))
-        {
-            Debug.Log("Rammer en fjende");
-            transform.position = startPosition;
-        }
-        if (collision.collider.CompareTag("Collectable"))
-        {
-            score = score + 1;
-            Debug.Log("Du samler en stjerne op!");
-            Debug.Log("Din score er nu " + score);
-            ScoreText.text = "Score: " + score;
-            Destroy(collision.gameObject);
-        }
-        if (collision.collider.CompareTag("Win"))
-        {
-            Debug.Log("WIN");
-            nextScene = nextScene + 1;
-            SceneManager.LoadScene(nextScene);
+    { 
+        
 
+   
+    
+        if (collision.gameObject.CompareTag("player"))
+        { 
+            SceneManager.LoadScene("NEW CRAFTING! I HATE CRAFTING!");
         }
 
     }
+    
 }
