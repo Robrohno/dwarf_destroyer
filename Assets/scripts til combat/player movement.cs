@@ -5,7 +5,8 @@ using UnityEngine;
 public class playermovement : MonoBehaviour
 {
     public float speed = 5;
-    public int facingDirection = 1;
+    private int facingDirection = 1;
+    private float deadzone = 0.1f;
 
     public Rigidbody2D rb;
     public Animator anim;
@@ -24,34 +25,34 @@ public class playermovement : MonoBehaviour
             Flip();
         }
 
-        anim.SetFloat("horizontal", Mathf.Abs (horizontal));
-        anim.SetFloat("vertical", vertical);
-        if(vertical < 0)
-        {
+        /*         anim.SetFloat("horizontal", Mathf.Abs (horizontal));
+        anim.SetFloat("vertical", vertical); */
+        
+        if(vertical > deadzone && Mathf.Abs (vertical) >= Mathf.Abs (horizontal)){
+            anim.SetBool("walkingUp", true);
+        }
+        else{
+            anim.SetBool("walkingUp", false);
+        }
+        if(vertical < 0f-deadzone && Mathf.Abs (vertical) >= Mathf.Abs (horizontal)){
             anim.SetBool("walkingDown", true);
         }
-        else
-        {
+        else{
             anim.SetBool("walkingDown", false);
         }
-
-        if(horizontal != 0)
-        {
-            anim.SetBool("hoizontalWalking", true);
+        
+        if(Mathf.Abs (horizontal) > deadzone && Mathf.Abs (horizontal) > Mathf.Abs (vertical)){
+            anim.SetBool("walking", true);
         }
-        else
-        {
-            anim.SetBool("hoizontalWalking", false);
+        else{
+            anim.SetBool("walking", false);
         }
-
-
         rb.velocity = new Vector2(horizontal, vertical) * speed;
-    }
 
-
-    void Flip()
-    {
-        facingDirection *= -1;
-        transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        void Flip()
+        {
+            facingDirection *= -1;
+            transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        }
     }
 }
