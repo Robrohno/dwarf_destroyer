@@ -603,6 +603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271325095}
   - component: {fileID: 1271325094}
+  - component: {fileID: 1271325096}
   m_Layer: 0
   m_Name: Mine inside big rock
   m_TagString: Untagged
@@ -677,6 +678,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &1271325096
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271325093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 16, y: 22}
+    newSize: {x: 16, y: 22}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.6370287, y: 8.959489}
+      - {x: 4.0659456, y: 7.882345}
+      - {x: 5.096428, y: 7.888346}
+      - {x: 5.877124, y: 7.0588226}
+      - {x: 5.880854, y: 6.566354}
+      - {x: 3.1251736, y: 4.978131}
+      - {x: 2.0454779, y: 4.8361025}
+      - {x: 1.9761968, y: 2.8430145}
+      - {x: 3.147418, y: 2.8117337}
+      - {x: 4.8599386, y: 1.0197039}
+      - {x: 3.9683204, y: -0.064836085}
+      - {x: 3.0104642, y: 0.018001243}
+      - {x: 3.023114, y: -1.0937488}
+      - {x: 3.9851365, y: -1.1494251}
+      - {x: 4.0066915, y: -2.2240586}
+      - {x: 2.9604015, y: -3.0976582}
+      - {x: 1.9767646, y: -3.0092983}
+      - {x: 1.9771937, y: -4.0130787}
+      - {x: 2.8355505, y: -4.130571}
+      - {x: 2.7921698, y: -7.0849977}
+      - {x: 1.9894557, y: -7.076543}
+      - {x: 2.0220575, y: -10.863906}
+      - {x: 10.76345, y: -10.738073}
+      - {x: 10.4419565, y: 12.774212}
+      - {x: -8.983355, y: 12.901008}
+      - {x: -8.157526, y: -10.043041}
+      - {x: -0.060192287, y: -10.869452}
+      - {x: -0.08793759, y: -7.0580482}
+      - {x: -1.9129622, y: -7.035487}
+      - {x: -2.0042622, y: -5.6056967}
+      - {x: -2.7995677, y: -5.082306}
+      - {x: -2.8181803, y: -4.0324516}
+      - {x: -0.05358529, y: -4.030531}
+      - {x: -0.0832845, y: -2.999059}
+      - {x: -1.0411454, y: -2.9846213}
+      - {x: -1.936657, y: -2.6163669}
+      - {x: -1.9325658, y: -2.1318603}
+      - {x: -1.116417, y: -1.0947884}
+      - {x: -0.023945272, y: -1.0447494}
+      - {x: 0.008044004, y: 0.16490054}
+      - {x: -1.1999209, y: 0.5542408}
+      - {x: -1.4155295, y: 1.4154868}
+      - {x: -1.9945407, y: 2.324808}
+      - {x: -2.8598478, y: 2.4827847}
+      - {x: -2.8640833, y: 3.0411367}
+      - {x: -1.9951849, y: 3.928844}
+      - {x: -2.0031643, y: 3.0277433}
+      - {x: -0.025698423, y: 3.0064304}
+      - {x: 0.012943268, y: 4.9482694}
+      - {x: -1.9335461, y: 5.042342}
+      - {x: -1.9261422, y: 6.157003}
+      - {x: -3.0161314, y: 7.2713447}
+      - {x: -3.8731503, y: 7.5002956}
+      - {x: -3.8597019, y: 8.052937}
+      - {x: -3.003687, y: 8.9745865}
+      - {x: -1.8893406, y: 8.926175}
+      - {x: -1.461421, y: 9.436964}
+      - {x: -0.5266266, y: 9.448262}
+      - {x: -0.019968152, y: 9.894896}
+      - {x: 1.9867656, y: 9.917515}
+      - {x: 2.5930293, y: 9.385379}
+  m_UseDelaunayMesh: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
