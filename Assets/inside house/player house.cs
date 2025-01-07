@@ -6,8 +6,15 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+<<<<<<< HEAD:Assets/inside house/player house.cs
     [SerializeField] private Blueprintcounter blueprint;
     float Speed = 5;
+=======
+    //static int nextScene = 0;
+    int score;
+    public float Speed = 5;
+
+>>>>>>> bff2007d4a2e900c18d3056f79f3289793e9432f:Assets/player house.cs
     Rigidbody2D rb;
     Vector3 startPosition;
 
