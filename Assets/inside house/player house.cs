@@ -6,9 +6,13 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
-    //static int nextScene = 0;
+
+    [SerializeField] private Blueprintcounter blueprint;
+    
+
     int score;
     public float Speed = 5;
+
 
     Rigidbody2D rb;
     Vector3 startPosition;
@@ -32,13 +36,20 @@ public class Player : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-    { 
-        
+    {
+        if (collision.gameObject.CompareTag("door"))
+        {
+            SceneManager.LoadScene("dungeon test");
 
-   
-    
-        if (collision.gameObject.CompareTag("player"))
-        { 
+
+        }
+
+
+
+
+        if (collision.gameObject.CompareTag("player") && blueprint.blueprintcounter >= 1)
+        {
+            blueprint.blueprintcounter = blueprint.blueprintcounter - 1;
             SceneManager.LoadScene("NEW CRAFTING! I HATE CRAFTING!");
         }
 

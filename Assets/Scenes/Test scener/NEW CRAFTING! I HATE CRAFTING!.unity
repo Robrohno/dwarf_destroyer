@@ -307,10 +307,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9ea86d789e3d04eb18748d8f717349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sworddurability: {fileID: 11400000, guid: ab943e18b26df5f44b3ccdc508320e8c, type: 2}
   counter: {fileID: 11400000, guid: b41b8775a82e93b4faf0e3181104da53, type: 2}
   Sword: {fileID: 21300000, guid: fe27d87df4c531e489c6acefc0e164a7, type: 3}
   Itemmanager: {fileID: 0}
   Bettersword: {fileID: 21300000, guid: 4ff6deeb74931be48afadeba9461c208, type: 3}
+  bloodsword: {fileID: 21300000, guid: d2a2c10b3f177e146b654d0643f70c17, type: 3}
+  draculasword: {fileID: 21300000, guid: 7a25975aabf19fc4286b3bc5370b9627, type: 3}
+  bananasword: {fileID: 21300000, guid: 7bc1343bf49060546a5c8ac0df16b8dc, type: 3}
 --- !u!1 &997243961
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +341,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997243961}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &997243963
 Camera:
   m_ObjectHideFlags: 0
