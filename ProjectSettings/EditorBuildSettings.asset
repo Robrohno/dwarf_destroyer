@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test scener/NEW CRAFTING! I HATE CRAFTING!.unity
     guid: 2c8316cb30bce9d49acb65c4abbbcd09
+  - enabled: 1
+    path: Assets/Scenes/dungeon test.unity
+    guid: 7963e410d76eaf04a942aab605dc957d
   m_configObjects: {}
