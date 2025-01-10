@@ -25,10 +25,10 @@ public class Inputslot : MonoBehaviour
     
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     { 
 
-        if(collision.collider.CompareTag("Crafter"))
+        if(collision.GetComponent<Collider2D>().CompareTag("Crafter"))
         {
             int random = (int)Math.Floor((double)UnityEngine.Random.Range(0, ItemList.items.Count));
 
