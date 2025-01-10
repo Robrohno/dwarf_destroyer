@@ -309,12 +309,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sworddurability: {fileID: 11400000, guid: ab943e18b26df5f44b3ccdc508320e8c, type: 2}
   counter: {fileID: 11400000, guid: b41b8775a82e93b4faf0e3181104da53, type: 2}
-  Sword: {fileID: 21300000, guid: fe27d87df4c531e489c6acefc0e164a7, type: 3}
   Itemmanager: {fileID: 0}
-  Bettersword: {fileID: 21300000, guid: 4ff6deeb74931be48afadeba9461c208, type: 3}
-  bloodsword: {fileID: 21300000, guid: d2a2c10b3f177e146b654d0643f70c17, type: 3}
-  draculasword: {fileID: 21300000, guid: 7a25975aabf19fc4286b3bc5370b9627, type: 3}
-  bananasword: {fileID: 21300000, guid: 7bc1343bf49060546a5c8ac0df16b8dc, type: 3}
+  ItemList: {fileID: 11400000, guid: 25617b98d6812194a8b48ef66016a12d, type: 2}
+  Inventory: {fileID: 11400000, guid: 487fb2196e45d0848a998063a9fde4b0, type: 2}
 --- !u!1 &997243961
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +922,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3, y: 3}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -975,7 +972,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19a94257aafce4544b99e907e2259ea5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1001,33 +998,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1525331366
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!111 &1525331366
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525331361}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d63b01570f3a7a343978df1bd3bbd409, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d63b01570f3a7a343978df1bd3bbd409, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1534279704
 GameObject:
   m_ObjectHideFlags: 0
