@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 898956667}
   - component: {fileID: 898956668}
   - component: {fileID: 898956669}
+  - component: {fileID: 898956670}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -286,7 +287,7 @@ Transform:
   m_GameObject: {fileID: 898956666}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.08, y: -0.26, z: 0}
+  m_LocalPosition: {x: 0.07999992, y: -0.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -356,6 +357,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6816d7d5071ddae4e936114a36f83f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &898956670
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898956666}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.5, y: 0.1875, z: 0.4375, w: 0.0625}
+    pivot: {x: 0.516512, y: 0.085096225}
+    oldSize: {x: 2, y: 4}
+    newSize: {x: 2, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.1434217, y: 3.3794274}
+      - {x: 0.01842168, y: 3.5507712}
+      - {x: -0.07440728, y: 3.4963508}
+      - {x: -0.18225867, y: 2.962195}
+      - {x: -0.19543913, y: 1.2392641}
+      - {x: -0.22265005, y: 0.63736486}
+      - {x: -0.21953207, y: 0.6563548}
+      - {x: -0.06321105, y: 0.6926364}
+      - {x: 0.0053831935, y: 0.6997222}
+      - {x: 0.21003193, y: 0.6797394}
+      - {x: 0.22817251, y: 1.3451304}
+      - {x: 0.22406235, y: 3.2311845}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1159472896
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1673628720}
-  speed: 3
+  speed: 0
   radius: 10
 --- !u!212 &1159472898
 SpriteRenderer:

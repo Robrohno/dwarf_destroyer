@@ -18,11 +18,11 @@ public class enemyDamage : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("CollisionDetected");
+        
         if (collision.gameObject.CompareTag("Player"))
         {
             playerHealth -= 5;
-           
+            Debug.Log(playerHealth +"player");
         }
     }
 }
