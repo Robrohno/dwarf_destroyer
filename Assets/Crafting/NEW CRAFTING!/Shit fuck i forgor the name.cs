@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Blueprintmousethingy : MonoBehaviour
+
 {
     
     public Rigidbody2D rb2;
@@ -31,7 +32,7 @@ public class Blueprintmousethingy : MonoBehaviour
 
         
 
-
+            
 
 
 
