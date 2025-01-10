@@ -2,21 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
-public class Player : MonoBehaviour
+public class Movementscripttilandetendindenfor : MonoBehaviour
 {
-
-    [SerializeField] private Blueprintcounter blueprint;
-
-
-    int score;
     public float Speed = 5;
 
 
     Rigidbody2D rb;
     Vector3 startPosition;
-
+    // Start is called before the first frame update
     void Start()
     {
         startPosition = transform.position;
@@ -34,34 +28,34 @@ public class Player : MonoBehaviour
         rb.velocity = direction;
 
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) 
     {
-        if (collision.gameObject.CompareTag("door"))
+    if (collision.gameObject.CompareTag("Door 2"))
         {
+            SceneManager.LoadScene("Hus Inside");
+        }
+
+    if (collision.gameObject.CompareTag("Door 3"))
+    {
+            SceneManager.LoadScene("Mine Indgang");
+    }
+
+
+    if (collision.gameObject.CompareTag("Door 4"))
+    {
             SceneManager.LoadScene("Hus Område");
+    }
 
-
-        }
-
-        
-
-
-
-
-
-
-        {
+    if (collision.gameObject.CompareTag("Door 5"))
+    {
+            SceneManager.LoadScene("Mine");
+    }
 
 
 
-            if (collision.gameObject.CompareTag("player") && blueprint.blueprintcounter >= 1)
-            {
-                blueprint.blueprintcounter = blueprint.blueprintcounter - 1;
-                SceneManager.LoadScene("NEW CRAFTING! I HATE CRAFTING!");
-            }
 
-        }
+
+
 
     }
 }
