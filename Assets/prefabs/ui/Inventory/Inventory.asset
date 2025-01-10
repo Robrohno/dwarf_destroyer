@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxItems: 10
   items:
-  - itemType: {fileID: 11400000, guid: 7a34086aa6b70b14c8a03ef18c4a3ae7, type: 2}
-    durabulity: 100
+  - itemType: {fileID: 11400000, guid: cdea5c87a363f614f80504b23471d312, type: 2}
+    durabulity: 200
     raity: 1
-  - itemType: {fileID: 11400000, guid: 2b4c68896012b324a996b86fc2ee6536, type: 2}
-    durabulity: 100
-    raity: 1
-  - itemType: {fileID: 11400000, guid: 7bbb192e94fd79844bbc397d69a63c05, type: 2}
+  - itemType: {fileID: 11400000, guid: b1810e2045d807348aa7184e898062c1, type: 2}
     durabulity: 100
     raity: 1

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f01221703ef13439783bf6df66d850, type: 3}
   m_Name: Sword-5
   m_EditorClassIdentifier: 
-  itemName: 
-  itemIcon: {fileID: 0}
+  itemName: Sword-5
+  itemIcon: {fileID: 21300000, guid: 7a25975aabf19fc4286b3bc5370b9627, type: 3}
   itemDescription: 
   startingDurability: 100
   rarity: 1
