@@ -8,6 +8,7 @@ public class Statbar : MonoBehaviour
     public float current = 100;
     public float decayRate = 0.1f;
     public float decaySpeed = 1;
+    public float health2pixels = 10;
 
     private float backBarCurrent = 0;
 
@@ -26,7 +27,7 @@ public class Statbar : MonoBehaviour
 
     public void Add(float value)
     {
-        current += value;
+        current += value * health2pixels;
         if (current > max)
         {
             current = max;
@@ -41,7 +42,7 @@ public class Statbar : MonoBehaviour
 
     public void Subtract(float value)
     {
-        current -= value;
+        current -= value * health2pixels;
         if (current < 0)
         {
             current = 0;
