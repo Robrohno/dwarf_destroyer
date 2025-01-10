@@ -36,10 +36,11 @@ public class DynamicInventory : ScriptableObject
 
     public bool AddDurability(ItemInstance item, int durabilityToAdd)
     {
+        Debug.Log(item.itemType.itemName);
         // Adds durability to an item if it exists in the inventory
-        if (items.Contains(item))
+        if (items.Find(x => x.itemType == item.itemType) != null)
         {
-            item.durabulity += durabilityToAdd;
+            items.Find(x => x.itemType == item.itemType).durabulity += durabilityToAdd;
             return true;
         }
         else {
