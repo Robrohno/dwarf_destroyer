@@ -45,6 +45,7 @@ public class testingscript : MonoBehaviour
                 InventoryId = 0;
             }
             UiInventory.sprite = inventory.items[InventoryId].itemType.itemIcon;
+            Debug.Log(inventory.items[InventoryId].Damage);
         }
     }
 }
