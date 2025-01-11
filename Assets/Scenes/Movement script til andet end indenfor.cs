@@ -28,34 +28,4 @@ public class Movementscripttilandetendindenfor : MonoBehaviour
         rb.velocity = direction;
 
     }
-    private void OnCollisionEnter2D(Collision2D collision) 
-    {
-    if (collision.gameObject.CompareTag("Door 2"))
-        {
-            SceneManager.LoadScene("Hus Inside");
-        }
-
-    if (collision.gameObject.CompareTag("Door 3"))
-    {
-            SceneManager.LoadScene("Mine Indgang");
-    }
-
-
-    if (collision.gameObject.CompareTag("Door 4"))
-    {
-            SceneManager.LoadScene("Hus Område");
-    }
-
-    if (collision.gameObject.CompareTag("Door 5"))
-    {
-            SceneManager.LoadScene("Mine");
-    }
-
-
-
-
-
-
-
-    }
 }
