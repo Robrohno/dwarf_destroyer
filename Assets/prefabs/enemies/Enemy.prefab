@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 274817493993535427}
   - component: {fileID: 231739254302297322}
   - component: {fileID: 4335535340312518658}
-  - component: {fileID: 7464740465404793186}
   - component: {fileID: 3421911249075473723}
   - component: {fileID: 116674883542328992}
   - component: {fileID: 8965523214316786239}
@@ -106,22 +105,8 @@ MonoBehaviour:
   speed: 4
   radius: 7
   HealthBar: {fileID: 0}
-  damage: 0.1
-  Timer: 2
---- !u!114 &7464740465404793186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2716974512970365736}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4063520249e0774a9f0031f044c66a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthBar: {fileID: 0}
   damage: 1
+  Timer: 2
 --- !u!68 &3421911249075473723
 EdgeCollider2D:
   m_ObjectHideFlags: 0

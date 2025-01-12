@@ -20,7 +20,7 @@ public class swordDamage : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-
+        Debug.Log("Collison");
         if (collision.gameObject.CompareTag("Sword"))
         {
             enemyHealth -= 5;
