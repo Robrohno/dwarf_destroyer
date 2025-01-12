@@ -6,7 +6,7 @@ public class enemyDamage : MonoBehaviour
 {
 
     [SerializeField] private Statbar HealthBar;
-    [SerializeField] private float damage = 0.1f;
+    [SerializeField] private float damage = 1f;
     void Start()
     {
        
