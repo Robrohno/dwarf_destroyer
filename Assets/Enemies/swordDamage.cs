@@ -13,15 +13,20 @@ public class swordDamage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (enemyHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Sword"))
         {
             enemyHealth -= 5;
             Debug.Log(enemyHealth + "enemy");
+
+
         }
     }
 }

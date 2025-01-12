@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class enemyDamage : MonoBehaviour
 {
-    public float playerHealth;
-    // Start is called before the first frame update
+
+    [SerializeField] private Statbar HealthBar;
+    [SerializeField] private float damage = 0.1f;
     void Start()
     {
-        playerHealth = 100;
+       
     }
 
     // Update is called once per frame
@@ -18,11 +19,9 @@ public class enemyDamage : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("player"))
         {
-            playerHealth -= 5;
-            Debug.Log(playerHealth +"player");
+            HealthBar.Subtract(damage);
         }
     }
 }
