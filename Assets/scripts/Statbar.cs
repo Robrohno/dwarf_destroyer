@@ -69,7 +69,6 @@ public class Statbar : MonoBehaviour
         // Smoothly animate the back bar to the current value
         var animateCalc = decayRate * Time.deltaTime * max;
         backBarCurrent -= animateCalc * decaySpeed;
-        print(backBarCurrent);
         backBar.localScale = new Vector3(backBarCurrent / max, 1, 1);
     }
 

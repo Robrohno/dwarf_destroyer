@@ -5,9 +5,13 @@ using UnityEngine;
 public class swordDamage : MonoBehaviour
 {
     public float enemyHealth;
+    [SerializeField] private EnemyHealthBar HealthBar;
     void Start()
     {
         enemyHealth = 100;
+        HealthBar.enemyHealth = enemyHealth;
+        HealthBar.max = enemyHealth;
+        HealthBar.backBarCurrent = enemyHealth;
     }
 
     // Update is called once per frame
@@ -24,6 +28,7 @@ public class swordDamage : MonoBehaviour
         if (collision.gameObject.CompareTag("Sword"))
         {
             enemyHealth -= 5;
+            HealthBar.SetHealth(enemyHealth);
             Debug.Log(enemyHealth + "enemy");
 
 

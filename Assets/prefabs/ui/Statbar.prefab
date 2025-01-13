@@ -171,6 +171,7 @@ MonoBehaviour:
   current: 200
   decayRate: 0.1
   decaySpeed: 1
+  health2pixels: 10
 --- !u!1 &7170106409809477807
 GameObject:
   m_ObjectHideFlags: 0
