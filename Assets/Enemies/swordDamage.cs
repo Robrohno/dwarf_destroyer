@@ -27,11 +27,10 @@ public class swordDamage : MonoBehaviour
         Debug.Log("Collison");
         if (collision.gameObject.CompareTag("Sword"))
         {
-            enemyHealth -= 5;
+            enemyHealth -= collision.gameObject.GetComponent<CombatSword>().damage;
             HealthBar.SetHealth(enemyHealth);
             Debug.Log(enemyHealth + "enemy");
-
-
+            collision.gameObject.GetComponent<CombatSword>().DecreaseDurability();
         }
     }
 }

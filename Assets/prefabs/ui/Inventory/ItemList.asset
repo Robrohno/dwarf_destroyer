@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ItemList
   m_EditorClassIdentifier: 
   maxItems: 10
+  lastItemIndex: 0
   items:
   - itemType: {fileID: 11400000, guid: b49099078d0ca2e49af295feb6e82a9c, type: 2}
     durabulity: 100
@@ -24,5 +25,5 @@ MonoBehaviour:
     durabulity: 100
     raity: 1
   - itemType: {fileID: 11400000, guid: b1810e2045d807348aa7184e898062c1, type: 2}
-    durabulity: 200
+    durabulity: 100
     raity: 1

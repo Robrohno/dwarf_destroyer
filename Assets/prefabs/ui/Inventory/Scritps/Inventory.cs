@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class DynamicInventory : ScriptableObject
 {
-    public int maxItems = 10; 
+    public int maxItems = 10;
+    public int lastItemIndex = 0;
     public List<ItemInstance> items = new();
 
     public bool AddItem(ItemInstance itemToAdd)
