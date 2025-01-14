@@ -27,7 +27,7 @@ public class Blueprintmousethingy : MonoBehaviour
 
             if (Input.GetKeyDown("space"))
             {
-                SceneManager.LoadScene("inside house possible temp");
+                SceneManager.LoadScene("Hus Inside");
             }
 
         

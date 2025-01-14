@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
+    
     public float speed = 5;
     private int facingDirection = 1;
     private float deadzone = 0.1f;
@@ -47,7 +48,7 @@ public class playermovement : MonoBehaviour
         else{
             anim.SetBool("walking", false);
         }
-        rb.velocity = new Vector2(horizontal, vertical) * speed;
+        rb.velocity = new Vector2(horizontal, vertical).normalized * speed;
 
         void Flip()
         {
