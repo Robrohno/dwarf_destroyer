@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("door"))
         {
-            SceneManager.LoadScene("Hus Område");
+            SceneManager.LoadScene("Hus Omrï¿½de");
 
 
         }
@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 
 
 
-            if (collision.gameObject.CompareTag("player") && blueprint.blueprintcounter >= 1)
+            if (collision.gameObject.CompareTag("player") && blueprint.blueprintcounter >= 0)
             {
                 blueprint.blueprintcounter = blueprint.blueprintcounter - 1;
                 SceneManager.LoadScene("NEW CRAFTING! I HATE CRAFTING!");
