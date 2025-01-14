@@ -33,6 +33,7 @@ public class Inputslot : MonoBehaviour
             int random = (int)Math.Floor((double)UnityEngine.Random.Range(0, ItemList.items.Count));
 
             if(used == false) {
+                Debug.Log("Fuck maren");
                 var Sword = ItemList.items[random];
                 Inventory.AddDurability(Sword, Sword.durabulity);
                 used = true;
