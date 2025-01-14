@@ -7,6 +7,6 @@ public class Ligma : MonoBehaviour
 {
     public void SceneChange()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(4);
     }
 }

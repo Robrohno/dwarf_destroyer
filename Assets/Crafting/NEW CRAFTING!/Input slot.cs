@@ -13,6 +13,7 @@ public class Inputslot : MonoBehaviour
     [SerializeField] private Itemmanager Itemmanager;
     [SerializeField] private DynamicInventory ItemList;
     [SerializeField] private DynamicInventory Inventory;
+    [SerializeField] private ParticleSystem effect;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,7 @@ public class Inputslot : MonoBehaviour
                 used = true;
                 SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
                 spriteRenderer.sprite = Sword.itemType.itemIcon;
+                Instantiate(effect);
             }
         }
     }
