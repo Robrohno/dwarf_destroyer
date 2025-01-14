@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Inventory
   m_EditorClassIdentifier: 
   maxItems: 10
+  lastItemIndex: 1
   items:
+  - itemType: {fileID: 11400000, guid: 1dce0b32eec28d543b82b425062325d4, type: 2}
+    durabulity: -1
+    raity: 0
   - itemType: {fileID: 11400000, guid: cdea5c87a363f614f80504b23471d312, type: 2}
-    durabulity: 200
-    raity: 1
-  - itemType: {fileID: 11400000, guid: b1810e2045d807348aa7184e898062c1, type: 2}
     durabulity: 100
-    raity: 1
+    raity: 0

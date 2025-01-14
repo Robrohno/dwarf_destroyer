@@ -6,10 +6,6 @@ public class swordDamage : MonoBehaviour
 {
     public float enemyHealth;
     [SerializeField] private EnemyHealthBar HealthBar;
-    public int min = 0;
-    public int max = 2;
-    private float randomNumber;
-    public Blueprintcounter blueprint;
     void Start()
     {
         enemyHealth = 100;
@@ -24,12 +20,6 @@ public class swordDamage : MonoBehaviour
         if (enemyHealth <= 0)
         {
             Destroy(gameObject);
-            randomNumber = Random.Range(min, max);
-           if (randomNumber >= 0)
-            {
-                blueprint.blueprintcounter += 1;
-            }
-           
         }
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -37,10 +27,10 @@ public class swordDamage : MonoBehaviour
         Debug.Log("Collison");
         if (collision.gameObject.CompareTag("Sword"))
         {
-            enemyHealth -= 5;
+            enemyHealth -= collision.gameObject.GetComponent<CombatSword>().damage;
             HealthBar.SetHealth(enemyHealth);
             Debug.Log(enemyHealth + "enemy");
-
+            collision.gameObject.GetComponent<CombatSword>().DecreaseDurability();
         }
     }
 }
