@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Hus Inside.unity
     guid: be4909703a0f57a459c5478217ceb1d6
   - enabled: 1
-    path: "Assets/Scenes/Hus Omr\xE5de.unity"
+    path: Assets/Scenes/Hus Omrade.unity
     guid: 2b151de88121ec34bb96295d5c7a0729
   - enabled: 1
     path: Assets/Scenes/Mine.unity
@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mine Indgang.unity
     guid: 0de09a242bb774848af1db461a0ef650
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Mine Omr\xE5de.unity"
     guid: 1e31df2d28984144f8af2b3b57b59f84
   m_configObjects: {}
