@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 
 
 
-            if (collision.gameObject.CompareTag("player") && blueprint.blueprintcounter >= 0)
+            if (collision.gameObject.CompareTag("player") && blueprint.blueprintcounter >= 1)
             {
                 blueprint.blueprintcounter = blueprint.blueprintcounter - 1;
                 SceneManager.LoadScene("NEW CRAFTING! I HATE CRAFTING!");
