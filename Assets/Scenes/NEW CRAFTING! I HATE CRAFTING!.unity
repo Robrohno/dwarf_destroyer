@@ -414,6 +414,7 @@ MonoBehaviour:
   Itemmanager: {fileID: 0}
   ItemList: {fileID: 11400000, guid: 25617b98d6812194a8b48ef66016a12d, type: 2}
   Inventory: {fileID: 11400000, guid: 487fb2196e45d0848a998063a9fde4b0, type: 2}
+  effect: {fileID: 543416366423854248, guid: abe042fce61d27049b13cd5a4b6c36ca, type: 3}
 --- !u!1 &724326007
 GameObject:
   m_ObjectHideFlags: 0
