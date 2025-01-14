@@ -27,3 +27,12 @@ MonoBehaviour:
   - itemType: {fileID: 11400000, guid: b1810e2045d807348aa7184e898062c1, type: 2}
     durabulity: 100
     raity: 1
+  - itemType: {fileID: 11400000, guid: d27af41b7c44c9643a058d86252fe892, type: 2}
+    durabulity: 70
+    raity: 1
+  - itemType: {fileID: 11400000, guid: 163469f36ac84154cb28865fc5caa3c4, type: 2}
+    durabulity: 100
+    raity: 1
+  - itemType: {fileID: 11400000, guid: 573feb9212ca07f47841e4b600e0ac8c, type: 2}
+    durabulity: 1
+    raity: 1
