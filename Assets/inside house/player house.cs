@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("door"))
         {
-            SceneManager.LoadScene("Hus Område");
+            SceneManager.LoadScene("Hus Omrï¿½de");
 
 
         }
