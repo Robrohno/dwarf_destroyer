@@ -19,7 +19,7 @@ public class ChangeItem : MonoBehaviour
         damage = sword.Damage;
         combatSword.damage = damage;
         UIinventorySprite.sprite = sword.itemType.itemIcon;
-        GetComponent<SpriteRenderer>().sprite = sword.itemType.itemIcon;
+        combatSword.GetComponent<SpriteRenderer>().sprite = sword.itemType.itemIcon;
         ChangeText();
         ChangeBoxCollider();
     }

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Sword-4
   m_EditorClassIdentifier: 
   itemName: Sword-4
-  itemIcon: {fileID: 21300000, guid: 7bc1343bf49060546a5c8ac0df16b8dc, type: 3}
+  itemIcon: {fileID: 21300000, guid: 8043c3eded81d4145b52fe72a5ad59c3, type: 3}
   itemDescription: 
   startingDurability: 100
+  damage: 10
   rarity: 1

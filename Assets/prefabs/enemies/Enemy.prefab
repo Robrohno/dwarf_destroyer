@@ -252,6 +252,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   HealthBar: {fileID: 6549973001287099639}
+  blueprints: {fileID: 11400000, guid: 7e9ca757db8c7244fb117604e91c9195, type: 2}
+  min: 0
+  max: 2
 --- !u!70 &1554991988819015777
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
