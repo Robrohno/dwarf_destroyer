@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5337e56541003db47ac0ec385621d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 102900000, guid: 2b151de88121ec34bb96295d5c7a0729, type: 3}
+  sceneToLoad: Hus Omrade
   spawnPointName: Cave
   spawnPointData: {fileID: 11400000, guid: 131f1ef6545108d4cb6de9777b9c8c7c, type: 2}
 --- !u!1 &289070048
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5337e56541003db47ac0ec385621d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 102900000, guid: 0d02c890710902240bd5426d38053325, type: 3}
+  sceneToLoad: Mine
   spawnPointName: Entrance
   spawnPointData: {fileID: 11400000, guid: 131f1ef6545108d4cb6de9777b9c8c7c, type: 2}
 --- !u!1 &619394800

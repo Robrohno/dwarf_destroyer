@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    [SerializeField] private SceneAsset sceneToLoad;
+    [SerializeField] private string sceneToLoad;
     [SerializeField] private string spawnPointName;
     [SerializeField] private SpawnPointData spawnPointData;
 
@@ -16,12 +16,12 @@ public class LoadScene : MonoBehaviour
             var try1 = spawnPointData.setSpawnPointName(spawnPointName);
             if (try1)
             {
-                SceneManager.LoadScene(sceneToLoad.name);
+                SceneManager.LoadScene(sceneToLoad);
             } else {
                 var try2 = spawnPointData.setSpawnPointName(spawnPointName);
                 if (try2)
                 {
-                    SceneManager.LoadScene(sceneToLoad.name);
+                    SceneManager.LoadScene(sceneToLoad);
                 } else {
                     Debug.LogError("Could not set spawn point name");
                 }

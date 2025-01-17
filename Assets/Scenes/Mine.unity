@@ -2789,7 +2789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5337e56541003db47ac0ec385621d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 102900000, guid: 0de09a242bb774848af1db461a0ef650, type: 3}
+  sceneToLoad: Mine Indgang
   spawnPointName: CaveEntrance
   spawnPointData: {fileID: 11400000, guid: 131f1ef6545108d4cb6de9777b9c8c7c, type: 2}
 --- !u!1 &1031140093

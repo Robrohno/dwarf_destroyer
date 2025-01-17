@@ -1166,9 +1166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5337e56541003db47ac0ec385621d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 0}
-  spawnPointName: 
-  spawnPointData: {fileID: 0}
+  sceneToLoad: Hus Omrade
+  spawnPointName: Default
+  spawnPointData: {fileID: 11400000, guid: 131f1ef6545108d4cb6de9777b9c8c7c, type: 2}
 --- !u!1 &1708849050
 GameObject:
   m_ObjectHideFlags: 0

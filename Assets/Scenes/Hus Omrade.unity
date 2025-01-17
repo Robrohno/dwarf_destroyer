@@ -13847,7 +13847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5337e56541003db47ac0ec385621d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 102900000, guid: 0de09a242bb774848af1db461a0ef650, type: 3}
+  sceneToLoad: Mine Indgang
   spawnPointName: Entrnace
   spawnPointData: {fileID: 11400000, guid: 131f1ef6545108d4cb6de9777b9c8c7c, type: 2}
 --- !u!1001 &1296570269
@@ -14834,7 +14834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5337e56541003db47ac0ec385621d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 102900000, guid: be4909703a0f57a459c5478217ceb1d6, type: 3}
+  sceneToLoad: Hus Inside
   spawnPointName: Default
   spawnPointData: {fileID: 11400000, guid: 131f1ef6545108d4cb6de9777b9c8c7c, type: 2}
 --- !u!1001 &1343785288
