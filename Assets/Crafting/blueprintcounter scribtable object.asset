@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c23ba7407b1c447ab1d3434576d859, type: 3}
   m_Name: blueprintcounter scribtable object
   m_EditorClassIdentifier: 
-  blueprintcounter: 16
+  blueprintcounter: 0

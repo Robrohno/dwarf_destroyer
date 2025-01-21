@@ -29,7 +29,7 @@ public class ChangeItem : MonoBehaviour
         var sword = inventory.items[inventory.lastItemIndex];
         if (sword.durabulity < 0)
         {
-            durabilityText.text = "♾️";
+            durabilityText.text = "∞";
         }
         else
         {

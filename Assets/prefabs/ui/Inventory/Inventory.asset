@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Inventory
   m_EditorClassIdentifier: 
   maxItems: 10
-  lastItemIndex: 1
+  lastItemIndex: 0
   items:
   - itemType: {fileID: 11400000, guid: 1dce0b32eec28d543b82b425062325d4, type: 2}
     durabulity: -1
